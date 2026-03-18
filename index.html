@@ -23,29 +23,23 @@ body {
    HEADER: LOGO + NOMBRE
 ========================= */
 .site-header {
-  display: flex;          /* coloca logo y texto en línea */
-  align-items: center;    /* centra verticalmente */
-  gap: 15px;              /* espacio entre logo y texto */
-  margin-bottom: 40px;    /* separación con el menú */
+  display: flex;           /* logo y texto en línea */
+  align-items: stretch;    /* logo ocupa toda la altura del texto */
+  gap: 15px;               /* espacio entre JJ y texto */
+  margin-bottom: 40px;
 }
 
-/* Logo circular con iniciales */
+/* "Logo" JJ como texto, ahora ocupa la altura del bloque */
 .logo {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #aaa;
-  border-radius: 50%;     
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
-  font-size: 14px;
-  color: #333;
+  font-size: 40px;        /* tamaño inicial, ajusta según altura del nombre + subtítulo */
+  display: flex;
+  align-items: center;     /* centra verticalmente */
 }
 
-/* Nombre principal */
+/* Nombre principal: doble tamaño */
 .name {
-  font-size: 16px;
+  font-size: 32px;        /* doble que antes */
   font-weight: 600;
 }
 
@@ -53,6 +47,15 @@ body {
 .subtitle {
   font-size: 13px;
   color: #777;
+  margin-top: 5px;
+  line-height: 1;         /* ajusta altura del subtítulo */
+}
+
+/* Contenedor del nombre + subtítulo */
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente la columna */
 }
 
 /* =========================
