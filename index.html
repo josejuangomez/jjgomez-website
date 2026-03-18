@@ -20,42 +20,47 @@ body {
 }
 
 /* =========================
-   HEADER: LOGO + NOMBRE
+   HEADER: JJ + NOMBRE + SUBTÍTULO
 ========================= */
 .site-header {
-  display: flex;           /* logo y texto en línea */
-  align-items: stretch;    /* logo ocupa toda la altura del texto */
-  gap: 15px;               /* espacio entre JJ y texto */
-  margin-bottom: 40px;
+  display: flex;                    /* logo y texto en línea */
+  align-items: center;              /* centra verticalmente el bloque */
+  gap: 40px;                        /* separación entre JJ y nombre/subtítulo */
+  margin-bottom: 60px;              /* separación del menú */
+  position: absolute;               /* para colocar en la esquina superior izquierda */
+  top: 40px;                        /* distancia desde el top de la pantalla */
+  left: 40px;                       /* distancia desde el lado izquierdo */
 }
 
-/* "Logo" JJ como texto, ahora ocupa la altura del bloque */
+/* JJ */
 .logo {
   font-weight: bold;
-  font-size: 40px;        /* tamaño inicial, ajusta según altura del nombre + subtítulo */
+  font-size: 80px;                  /* más grande */
+  color: #FFD700;                   /* dorado */
   display: flex;
-  align-items: center;     /* centra verticalmente */
+  align-items: center;
+}
+
+/* Contenedor nombre + subtítulo */
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;          /* centra las 2 líneas verticalmente */
+  gap: 5px;                         /* reduce separación entre nombre y subtítulo */
 }
 
 /* Nombre principal: doble tamaño */
 .name {
-  font-size: 32px;        /* doble que antes */
+  font-size: 64px;
   font-weight: 600;
+  line-height: 1;                   /* ajusta altura */
 }
 
 /* Subtítulo discreto */
 .subtitle {
-  font-size: 13px;
+  font-size: 20px;
   color: #777;
-  margin-top: 5px;
-  line-height: 1;         /* ajusta altura del subtítulo */
-}
-
-/* Contenedor del nombre + subtítulo */
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centra verticalmente la columna */
+  line-height: 1;                   /* más compacto */
 }
 
 /* =========================
