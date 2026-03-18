@@ -23,20 +23,17 @@ body {
    HEADER: JJ + NOMBRE + SUBTÍTULO
 ========================= */
 .site-header {
-  display: flex;                    /* logo y texto en línea */
-  align-items: center;              /* centra verticalmente el bloque */
-  gap: 40px;                        /* separación entre JJ y nombre/subtítulo */
-  margin-bottom: 60px;              /* separación del menú */
-  position: absolute;               /* para colocar en la esquina superior izquierda */
-  top: 40px;                        /* distancia desde el top de la pantalla */
-  left: 40px;                       /* distancia desde el lado izquierdo */
+  display: flex;               /* logo y texto en línea */
+  align-items: center;         /* centra verticalmente el bloque de nombre+subtítulo */
+  gap: 15px;                   /* separación entre JJ y bloque de texto */
+  margin-bottom: 40px;         /* separación del menú */
 }
 
-/* JJ */
+/* JJ más grande y dorado */
 .logo {
   font-weight: bold;
-  font-size: 80px;                  /* más grande */
-  color: #FFD700;                   /* dorado */
+  font-size: 64px;            /* más grande que antes */
+  color: #FFD700;             /* dorado */
   display: flex;
   align-items: center;
 }
@@ -45,22 +42,22 @@ body {
 .title {
   display: flex;
   flex-direction: column;
-  justify-content: center;          /* centra las 2 líneas verticalmente */
-  gap: 5px;                         /* reduce separación entre nombre y subtítulo */
+  justify-content: center;     /* centra verticalmente respecto a JJ */
+  gap: 2px;                    /* pegadas las 2 líneas */
 }
 
-/* Nombre principal: doble tamaño */
+/* Nombre principal */
 .name {
-  font-size: 64px;
+  font-size: 32px;             /* tamaño original */
   font-weight: 600;
-  line-height: 1;                   /* ajusta altura */
+  line-height: 1;
 }
 
 /* Subtítulo discreto */
 .subtitle {
-  font-size: 20px;
+  font-size: 13px;             /* tamaño original */
   color: #777;
-  line-height: 1;                   /* más compacto */
+  line-height: 1;
 }
 
 /* =========================
