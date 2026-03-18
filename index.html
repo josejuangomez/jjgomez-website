@@ -24,12 +24,14 @@ nav a {
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: all 0.2s ease;
+  display: inline-block; /* IMPORTANTE para que funcione el scale */
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 nav a:hover {
   color: black;
-  text-shadow: 0 0 0.5px black; /* simula negrita sin mover layout */
+  transform: scale(1.12); /* agranda el texto */
+  text-shadow: 0 0 0.5px black; /* mantiene efecto negrita */
 }
   
 body {
