@@ -21,19 +21,24 @@ body {
 
 /* =========================
    HEADER: JJ + NOMBRE + SUBTÍTULO
+   Posicionado libre en la esquina superior izquierda
 ========================= */
 .site-header {
-  display: flex;               /* logo y texto en línea */
-  align-items: center;         /* centra verticalmente el bloque de nombre+subtítulo */
+  display: flex;               /* logo y bloque de texto en línea */
+  align-items: center;         /* centra verticalmente respecto a JJ */
   gap: 15px;                   /* separación entre JJ y bloque de texto */
-  margin-bottom: 40px;         /* separación del menú */
+  
+  /* posición libre en la pantalla */
+  position: absolute;           /* lo saca del flujo del body */
+  top: 20px;                    /* distancia desde arriba */
+  left: 20px;                   /* distancia desde izquierda */
 }
 
-/* JJ más grande y dorado */
+/* JJ grande y dorado */
 .logo {
   font-weight: bold;
-  font-size: 64px;            /* más grande que antes */
-  color: #FFD700;             /* dorado */
+  font-size: 64px;              /* tamaño grande */
+  color: #FFD700;               /* dorado */
   display: flex;
   align-items: center;
 }
@@ -42,20 +47,20 @@ body {
 .title {
   display: flex;
   flex-direction: column;
-  justify-content: center;     /* centra verticalmente respecto a JJ */
-  gap: 2px;                    /* pegadas las 2 líneas */
+  justify-content: center;      /* centra verticalmente respecto a JJ */
+  gap: 2px;                     /* líneas pegadas entre sí */
 }
 
-/* Nombre principal */
+/* Nombre principal, más pequeño que antes */
 .name {
-  font-size: 32px;             /* tamaño original */
+  font-size: 28px;              /* más pequeño que 32px original */
   font-weight: 600;
   line-height: 1;
 }
 
 /* Subtítulo discreto */
 .subtitle {
-  font-size: 13px;             /* tamaño original */
+  font-size: 13px;
   color: #777;
   line-height: 1;
 }
