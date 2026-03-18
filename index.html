@@ -2,18 +2,71 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Jose Juan Gomez</title>
-<style>
+<title>Jose Juan Gómez</title>
 
+<!-- =========================
+     ESTILOS CSS
+========================= -->
+<style>
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER: LOGO + NOMBRE
+========================= */
+.site-header {
+  display: flex;          /* coloca logo y texto en línea */
+  align-items: center;    /* centra verticalmente */
+  gap: 15px;              /* espacio entre logo y texto */
+  margin-bottom: 40px;    /* separación con el menú */
+}
+
+/* Logo circular con iniciales */
+.logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #aaa;
+  border-radius: 50%;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Nombre principal */
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Subtítulo discreto */
+.subtitle {
+  font-size: 13px;
+  color: #777;
+}
+
+/* =========================
+   MENÚ DE NAVEGACIÓN
+========================= */
 nav {
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* espacio debajo del menú */
 }
 
 nav ul {
-  display: flex;
-  justify-content: center; /* centra el menú */
-  gap: 30px;               /* espacio entre enlaces */
-  list-style: none;
+  display: flex;                 /* menú en línea */
+  justify-content: center;       /* centra horizontalmente */
+  gap: 30px;                     /* espacio entre links */
+  list-style: none;              
   padding: 0;
   margin: 0;
 }
@@ -24,36 +77,48 @@ nav a {
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  display: inline-block; /* IMPORTANTE para que funcione el scale */
+  display: inline-block;         /* permite transform/scale */
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 nav a:hover {
   color: black;
-  transform: scale(1.12); /* agranda el texto */
-  text-shadow: 0 0 0.5px black; /* mantiene efecto negrita */
-}
-  
-body {
-  font-family: Arial;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-  line-height: 1.6;
+  transform: scale(1.12);        /* agranda ligeramente */
+  text-shadow: 0 0 0.5px black;  /* simula negrita */
 }
 
-h1{
-font-size:42px;
+/* =========================
+   TÍTULOS SECUNDARIOS
+========================= */
+h2 {
+  margin-top: 40px;
 }
 
-h2{
-margin-top:40px;
+/* =========================
+   LISTAS
+========================= */
+ul li {
+  margin-bottom: 5px;
 }
-
 </style>
 </head>
 
 <body>
+
+<!-- =========================
+     HEADER: LOGO + NOMBRE + SUBTÍTULO
+========================= -->
+<header class="site-header">
+  <div class="logo">JJ</div>
+  <div class="title">
+    <div class="name">Jose Juan Gómez</div>
+    <div class="subtitle">Consultor SAP VIM</div>
+  </div>
+</header>
+
+<!-- =========================
+     MENÚ DE NAVEGACIÓN CENTRADO
+========================= -->
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -63,21 +128,20 @@ margin-top:40px;
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-  
-<h1>Jose Juan Gomez</h1>
-<p>Consultor VIM SAP</p>
 
+<!-- =========================
+     CONTENIDO PRINCIPAL
+========================= -->
 <h2>About</h2>
 <p>
-Ayudo a empresas a mejorar su toma de decisiones
-estratégicas mediante sistemas de innovación y valor.
+Ayudo a empresas a mejorar su toma de decisiones estratégicas mediante sistemas de innovación y valor.
 </p>
 
 <h2>Services</h2>
 <ul>
-<li>VIM Strategy</li>
-<li>Innovation Systems</li>
-<li>Decision Frameworks</li>
+  <li>VIM Strategy</li>
+  <li>Innovation Systems</li>
+  <li>Decision Frameworks</li>
 </ul>
 
 <h2>Contact</h2>
