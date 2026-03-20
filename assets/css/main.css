@@ -4702,17 +4702,15 @@ input, select, textarea {
 	text-align: center;
 }
 
-/* Ajuste para tablet y móvil */
+/* Ajuste para tablet y móvil donde aparece MENU hamburguesa */
 @media screen and (max-width: 768px) {
     .language-selector {
-        top: 15px;
-        left: 15px;
-        font-size: 14px;
+        top: 20px;           /* alineado vertical con MENU */
+        left: 20px;          /* lado contrario al MENU */
+        font-size: 16px;     /* mismo tamaño que MENU */
     }
-}
-
-    /* Ajuste si el tamaño del font del MENU cambia en JS */
+    /* Asegura que el MENU tenga el mismo tamaño de font */
     .navPanelToggle {
-        font-size: 16px;       /* referencia para igual tamaño */
+        font-size: 16px;
     }
 }
