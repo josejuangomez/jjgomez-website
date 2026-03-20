@@ -4687,3 +4687,29 @@ input, select, textarea {
 		}
 
 	}
+
+/* Idioma estilo menú con bandera */
+#header .lang {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#header .lang ul {
+    margin: 0;
+}
+
+#header .lang ul li {
+    display: inline-block;
+}
+
+#header .lang ul li a {
+    border: 0;
+}
+
+#header .lang img {
+    height: 14px;      /* mismo tamaño visual que texto menú */
+    width: auto;
+    display: block;
+}
