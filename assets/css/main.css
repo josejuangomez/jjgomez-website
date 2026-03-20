@@ -4688,28 +4688,30 @@ input, select, textarea {
 
 	}
 
-/* Idioma estilo menú con bandera */
-#header .lang {
-    position: absolute;
-    left: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
+/* ===================================================== */
+/* Selector de idioma fijo en esquina superior izquierda */
+/* ===================================================== */
+.language-selector {
+    position: fixed;              /* siempre visible en pantalla */
+    top: 20px;                    /* distancia desde arriba */
+    left: 20px;                   /* esquina izquierda */
+    z-index: 10000;               /* encima de todo */
+    background: rgba(255, 255, 255, 0.8); /* fondo semi-transparente opcional */
+    border-radius: 5px;           /* bordes redondeados */
+    padding: 5px 8px;             /* espacio alrededor de la bandera */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra suave para destacar */
+    transition: all 0.2s ease;    /* efecto hover suave */
 }
 
-#header .lang ul {
-    margin: 0;
-}
-
-#header .lang ul li {
-    display: inline-block;
-}
-
-#header .lang ul li a {
-    border: 0;
-}
-
-#header .lang img {
-    height: 14px;      /* mismo tamaño visual que texto menú */
+/* Imagen de la bandera */
+.language-selector img {
+    height: 16px;   /* tamaño uniforme con estilo menú */
     width: auto;
     display: block;
+}
+
+/* Hover opcional para destacar */
+.language-selector:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-2px); /* pequeño movimiento para dar efecto */
 }
