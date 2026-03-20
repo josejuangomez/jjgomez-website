@@ -4699,6 +4699,7 @@ input, select, textarea {
     background: rgba(255,255,255,0.8); /* fondo semitransparente opcional */
     padding: 5px 10px;
     border-radius: 5px;
+	text-align: center;
 }
 
 /* Ajuste para tablet y móvil */
