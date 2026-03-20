@@ -4687,16 +4687,3 @@ input, select, textarea {
 		}
 
 	}
-
-/* Selector de idioma fijo en esquina superior izquierda */
-.language-selector {
-    position: fixed;  /* siempre visible */
-    top: 20px;        /* distancia desde arriba */
-    left: 20px;       /* esquina izquierda */
-    z-index: 1000;    /* encima de todo */
-    font-weight: bold;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-	text-align: center;
-}
