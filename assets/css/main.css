@@ -4687,3 +4687,25 @@ input, select, textarea {
 		}
 
 	}
+
+/* Selector de idioma fijo en esquina superior izquierda */
+.language-selector {
+    position: fixed;  /* siempre visible */
+    top: 20px;        /* distancia desde arriba */
+    left: 20px;       /* esquina izquierda */
+    z-index: 1000;    /* encima de todo */
+    font-weight: bold;
+    font-size: 16px;
+    background: rgba(255,255,255,0.8); /* fondo semitransparente opcional */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Ajuste para tablet y móvil */
+@media screen and (max-width: 768px) {
+    .language-selector {
+        top: 15px;
+        left: 15px;
+        font-size: 14px;
+    }
+}
