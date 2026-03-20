@@ -4695,22 +4695,8 @@ input, select, textarea {
     left: 20px;       /* esquina izquierda */
     z-index: 1000;    /* encima de todo */
     font-weight: bold;
-    font-size: 16px;
-    background: rgba(255,255,255,0.8); /* fondo semitransparente opcional */
+    font-size: 14px;
     padding: 5px 10px;
     border-radius: 5px;
 	text-align: center;
-}
-
-/* Ajuste para tablet y móvil donde aparece MENU hamburguesa */
-@media screen and (max-width: 768px) {
-    .language-selector {
-        top: 20px;           /* alineado vertical con MENU */
-        left: 20px;          /* lado contrario al MENU */
-        font-size: 16px;     /* mismo tamaño que MENU */
-    }
-    /* Asegura que el MENU tenga el mismo tamaño de font */
-    .navPanelToggle {
-        font-size: 16px;
-    }
 }
